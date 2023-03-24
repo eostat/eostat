@@ -1,0 +1,587 @@
+@import "./font/stylesheet.css";
+
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Spoof';
+}
+
+html {
+  background: #E9DAFD;
+}
+
+body {
+  margin: 3vmax;
+  max-width: 100vw;
+  border: .2vmax solid #000;
+  background: #fff;
+}
+
+ul {
+  list-style: unset;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+.limiter {
+  width: 1200px;
+  width: 40vmax;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  width: 100%;
+
+  .limiter {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 3vmax;
+    padding-left: .8vmax;
+    font-weight: 800;
+    width: 33.3333%;
+    background: #d8d0e387;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    width: 33.3333%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    li {
+      margin-left: 4%;
+      margin-right: 4%;
+      font-weight: 400;
+      font-size: 1.2vmax;
+      background: #d8d0e387;
+      font-weight: 500;
+      padding: .6vmax 1.5vmax;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .button {
+    width: 33.3333%;
+    font-weight: 800;
+    text-align: right;
+    padding: 0 2vmax;
+    font-size: 1.5vmax;
+    background: #d8d0e387;
+    font-weight: 500;
+    padding: 1vmax 1.5vmax;
+    padding-right: 4%;
+    height: 100%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+section {
+  position: relative;
+
+  .num {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 900;
+    font-size: 10vmax;
+    margin-right: 4vmax;
+    opacity: 1;
+    color: #FFD8D8;
+  }
+}
+
+.banner {
+  //height: 80vh;
+  padding-top: 13vmax;
+  padding-bottom: 15vmax;
+  border-bottom: 4px solid #000;
+
+  .limiter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .video {
+    width: 45vmax;
+    object-fit: cover;
+    border: 6px solid #000;
+    height: 27vmax;
+    margin-top: 3vmax;
+  }
+
+  h1 {
+    font-size: 3.75vmax;
+    text-decoration: underline;
+  }
+
+  .sub {
+    font-weight: 600;
+    width: 100%;
+    padding-left: 53.9%;
+    font-size: 1.34vmax;
+
+    p:first-child {
+      font-size: 1.4vmax;
+    }
+
+    p:last-child {
+      font-weight: 300;
+    }
+  }
+
+  h2 {
+    color: #ABBD46;
+    margin-top: 5vmax;
+    font-weight: 600;
+    width: 43vmax;
+    max-width: 95%;
+    text-align: center;
+    font-size: 2vmax;
+    line-height: 1.25em;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.howorks {
+  padding-top: 9vmax;
+  padding-bottom: 10.5vmax;
+  border-bottom: 4px solid #000;
+
+  h1 {
+    text-align: center;
+    font-size: 2.52vmax;
+    font-weight: 100;
+  }
+
+  .limiter {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.05vmax;
+    text-align: center;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    margin-top: 5vmax;
+    width: 60vmax;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &.pc {
+      display: block;
+    }
+  }
+}
+
+.whitepaper {
+  border-bottom: 4px solid #000;
+  padding-top: 9vmax;
+  padding-bottom: 10.5vmax;
+
+  h1 {
+    text-align: center;
+    font-size: 2.52vmax;
+    margin-bottom: 3vmax;
+  }
+
+  img {
+    width: 900px;
+    max-width: 80%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+  }
+
+  p {
+    margin-bottom: 1.3vmax;
+    font-size: 1.25vmax;
+    //width: 900px;
+    max-width: 80%;
+    margin-left: auto;
+    line-height: 2vmax;
+    margin-right: auto;
+  }
+
+  .button {
+    background: #E9DAFD;
+    border: 3px solid #000;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 1.2vmax 0;
+    font-weight: 700;
+    font-size: 1.5vmax;
+    margin-top: 1vmax;
+    //width: 30vmax;
+    max-width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vmax;
+  }
+}
+
+.becomepart {
+  padding-top: 9vmax;
+  padding-bottom: 10.5vmax;
+
+  h1 {
+    text-align: center;
+    font-size: 2.52vmax;
+    margin-bottom: 5vmax;
+  }
+
+  ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2vmax;
+    list-style-position: inside;
+    border-bottom: 1px solid #000;
+
+    li {
+      border-top: 1px solid #000;
+      padding-top: 1.2vmax;
+      padding-bottom: 1.2vmax;
+    }
+  }
+
+  .donator {
+    background: #FFD8D8;
+    border: 3px solid #000;
+    margin-top: 5.5vmax;
+    padding: 3vmax 4.3vmax;
+    font-weight: 700;
+    //width: 950px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vmax;
+
+    p {
+      margin-bottom: 2vmax;
+    }
+
+    .wallet {
+      background: #fff;
+      border: 3px solid #000;
+      padding: 1vmax 1.6vmax;
+      margin-bottom: 1vmax;
+    }
+
+    .br {
+      margin-top: 4vmax;
+      padding-top: 4vmax;
+      border-top: 3px solid #000
+    }
+
+    .button {
+      background: #E9DAFD;
+      border: 3px solid #000;
+      width: 100%;
+      text-align: center;
+      display: block;
+      padding: 1.2vmax 0;
+      margin-top: 1vmax;
+
+      &-donator {
+        margin-top: 1vmax;
+      }
+    }
+  }
+}
+
+.roadmap {
+  //width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+
+  h2 {
+    font-size: 2.3vmax;
+    text-align: center;
+    margin-bottom: 3vmax;
+    margin-top: 4vmax;
+    padding-top: 3vmax;
+    border-top: 3px solid #000;
+  }
+
+  p {
+    background: #FFD8D8;
+    padding: 1vmax 1.7vmax;
+
+    &.done {
+      background: #E9DAFD;
+    }
+  }
+}
+
+.emaillead {
+  text-align: center;
+  margin-bottom: 2.5vmax;
+  padding-top: 2.5vmax;
+  border-top: 3px solid #000;
+  font-size: 1.3vmax;
+  font-weight: 500;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+  .mob {
+    display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .pc {
+    display: none !important;
+  }
+
+  body {
+    margin: 2vmax;
+  }
+
+  section {
+    padding-left: 4vmax;
+    padding-right: 4vmax;
+  }
+
+  section {
+    .num {
+      font-size: 8vmax;
+      margin-right: 2.5vmax;
+    }
+  }
+
+  .banner {
+    border-bottom-width: 2px;
+    padding-top: 10vmax;
+    padding-bottom: 11vmax;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 4vmax;
+      font-size: 5vmax;
+    }
+
+    .sub {
+      padding-left: 0;
+      text-align: center;
+      font-size: 2vmax;
+
+      p:first-child {
+        font-size: 2.3vmax;
+      }
+
+      p:last-child {
+        font-size: 2.2vmax;
+        margin-top: .5vmax;
+      }
+    }
+
+    h2 {
+      font-size: 2.3vmax;
+    }
+
+    .video {
+      width: 100%;
+      height: 20vmax;
+    }
+  }
+
+  .howorks {
+    padding-top: 5vmax;
+    padding-bottom: 10vmax;
+    padding-left: 1.5vmax;
+    padding-right: 1.5vmax;
+    border-bottom-width: 2px;
+
+    h1 {
+      font-size: 3vmax;
+      line-height: 3.5vmax;
+      margin-bottom: 2vmax;
+    }
+
+    h2 {
+      font-size: 3vmax;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .whitepaper {
+    padding: 5vmax 2vmax;
+    padding-bottom: 9vmax;
+    border-bottom-width: 2px;
+
+    .button {
+      width: 100%;
+      max-width: 100%;
+      font-size: 2.1vmax;
+    }
+
+    h1 {
+      font-size: 3vmax;
+    }
+
+    p {
+      font-size: 1.9vmax;
+      //font-weight: 300;
+      width: 100%;
+      text-align: justify;
+      max-width: 90%;
+      line-height: 2.85vmax;
+    }
+  }
+
+  .roadmap {
+    h2 {
+      font-size: 3vmax;
+      border-top-width: 2px;
+    }
+  }
+
+  .becomepart {
+    padding: 5vmax 2vmax;
+    padding-bottom: 10.5vmax;
+
+    h1 {
+      font-size: 3vmax;
+    }
+
+    ul {
+      max-width: 90%;
+      width: 100%;
+
+      li {
+        font-size: 1.8vmax;
+      }
+    }
+
+    .donator {
+      border-width: 2px;
+
+      p {
+        font-size: 2vmax;
+      }
+
+      .wallet {
+        font-size: 1.85vmax;
+      }
+
+      .button {
+        font-size: 2vmax;
+      }
+    }
+  }
+
+  header {
+    .limiter {
+      flex-wrap: wrap;
+
+      .logo {
+        order: 1;
+        width: 50%;
+        //font-size: 2vmax;
+        padding-left: 1.4vmax;
+        background: #fff;
+      }
+
+      .button {
+        order: 2;
+        width: calc(50% - 1vmax);
+        font-size: 2.2vmax;
+        padding-right: 1vmax;
+        background: #d8d0e387;
+        font-weight: 500;
+        padding: 1vmax 1.5vmax;
+        margin-top: .8vmax;
+        margin-right: 1vmax;
+      }
+
+      ul {
+        order: 3;
+        width: 100%;
+        padding: 0 1vmax;
+        margin-top: 1vmax;
+        justify-content: space-between;
+
+        li {
+          margin: 0;
+          font-size: 1.7vmax;
+          background: #d8d0e387;
+          font-weight: 500;
+          padding: 1vmax 1.5vmax;
+        }
+      }
+    }
+  }
+
+  .emaillead {
+    border-top-width: 2px;
+    font-size: 2vmax;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
